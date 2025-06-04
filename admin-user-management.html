@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelola Pengguna | Valorant Skin Marketplace Admin</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/admin-user-management.css">
+</head>
+<body>
+<div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <h2>VALORANT ADMIN</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="admin-dashboard.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin-transaction-management.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        Kelola Transaksi
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="admin-user-management.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        Kelola Pengguna
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin-product-management.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        Kelola Produk
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin-article-management.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14,2 14,8 20,8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                        Kelola Artikel
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="index.html" class="back-to-site">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16,17 21,12 16,7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg>
+                Kembali ke Situs
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-left">
+                <button class="sidebar-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
+                </button>
+                <h1>Kelola Pengguna</h1>
+            </div>
+            <div class="header-right">
+                <button class="add-user-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="22" x2="22" y1="11" y2="13"></line><line x1="21" x2="23" y1="12" y2="12"></line></svg>
+                    Tambah Pengguna
+                </button>
+                <div class="admin-profile">
+                    <img src="images/pp.jpg" alt="Admin" class="profile-avatar">
+                    <div class="profile-info">
+                        <span class="profile-name">Admin User</span>
+                        <span class="profile-role">Administrator</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- User Management Content -->
+        <div class="management-content">
+            <!-- User Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon users">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Total Pengguna</h3>
+                        <p class="stat-number">8,549</p>
+                        <span class="stat-change positive">+15.3% bulan ini</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon active-users">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Pengguna Aktif</h3>
+                        <p class="stat-number">7,234</p>
+                        <span class="stat-change">84.6% dari total</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon new-users">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="22" x2="22" y1="11" y2="13"></line><line x1="21" x2="23" y1="12" y2="12"></line></svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Pengguna Baru</h3>
+                        <p class="stat-number">156</p>
+                        <span class="stat-change positive">+23 minggu ini</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon premium-users">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Pengguna Premium</h3>
+                        <p class="stat-number">1,892</p>
+                        <span class="stat-change positive">+8.7% bulan ini</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters and Search -->
+            <div class="management-controls">
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                    <input type="text" placeholder="Cari pengguna berdasarkan nama, email, atau ID...">
+                </div>
+                <div class="filter-controls">
+                    <select class="filter-select">
+                        <option value="all">Semua Status</option>
+                        <option value="active">Aktif</option>
+                        <option value="inactive">Tidak Aktif</option>
+                        <option value="suspended">Ditangguhkan</option>
+                    </select>
+                    <select class="filter-select">
+                        <option value="all">Semua Tipe</option>
+                        <option value="regular">Regular</option>
+                        <option value="premium">Premium</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <select class="filter-select">
+                        <option value="newest">Terbaru</option>
+                        <option value="oldest">Terlama</option>
+                        <option value="name">Nama A-Z</option>
+                        <option value="activity">Aktivitas Terakhir</option>
+                    </select>
+                    <button class="export-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7,10 12,15 17,10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+                        Export
+                    </button>
+                </div>
+            </div>
+
+            <!-- Users Table -->
+            <div class="table-container">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="select-all">
+                            </th>
+                            <th>Pengguna</th>
+                            <th>Email</th>
+                            <th>Tipe</th>
+                            <th>Status</th>
+                            <th>Bergabung</th>
+                            <th>Aktivitas Terakhir</th>
+                            <th>Total Pembelian</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" class="row-select"></td>
+                            <td>
+                                <div class="user-info">
+                                    <img src="images/pp.jpg" alt="User" class="user-avatar">
+                                    <div>
+                                        <span class="user-name">John Doe</span>
+                                        <span class="user-id">#USR-001</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>john.doe@email.com</td>
+                            <td><span class="user-type premium">Premium</span></td>
+                            <td><span class="status-badge active">Aktif</span></td>
+                            <td>15 Jan 2025</td>
+                            <td>2 jam lalu</td>
+                            <td>$249.97</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view" title="Lihat Detail">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </button>
+                                    <button class="action-btn edit" title="Edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                    </button>
+                                    <button class="action-btn suspend" title="Tangguhkan">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" x2="9" y1="9" y2="15"></line><line x1="9" x2="15" y1="9" y2="15"></line></svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-select"></td>
+                            <td>
+                                <div class="user-info">
+                                    <img src="images/pp.jpg" alt="User" class="user-avatar">
+                                    <div>
+                                        <span class="user-name">Jane Smith</span>
+                                        <span class="user-id">#USR-002</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>jane.smith@email.com</td>
+                            <td><span class="user-type regular">Regular</span></td>
+                            <td><span class="status-badge active">Aktif</span></td>
+                            <td>12 Jan 2025</td>
+                            <td>1 hari lalu</td>
+                            <td>$74.98</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view" title="Lihat Detail">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </button>
+                                    <button class="action-btn edit" title="Edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                    </button>
+                                    <button class="action-btn suspend" title="Tangguhkan">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" x2="9" y1="9" y2="15"></line><line x1="9" x2="15" y1="9" y2="15"></line></svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-select"></td>
+                            <td>
+                                <div class="user-info">
+                                    <img src="images/pp.jpg" alt="User" class="user-avatar">
+                                    <div>
+                                        <span class="user-name">Mike Johnson</span>
+                                        <span class="user-id">#USR-003</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>mike.johnson@email.com</td>
+                            <td><span class="user-type admin">Admin</span></td>
+                            <td><span class="status-badge active">Aktif</span></td>
+                            <td>8 Jan 2025</td>
+                            <td>30 menit lalu</td>
+                            <td>$0.00</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view" title="Lihat Detail">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </button>
+                                    <button class="action-btn edit" title="Edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                    </button>
+                                    <button class="action-btn suspend" title="Tangguhkan" disabled>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" x2="9" y1="9" y2="15"></line><line x1="9" x2="15" y1="9" y2="15"></line></svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-select"></td>
+                            <td>
+                                <div class="user-info">
+                                    <img src="images/pp.jpg" alt="User" class="user-avatar">
+                                    <div>
+                                        <span class="user-name">Sarah Wilson</span>
+                                        <span class="user-id">#USR-004</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>sarah.wilson@email.com</td>
+                            <td><span class="user-type regular">Regular</span></td>
+                            <td><span class="status-badge inactive">Tidak Aktif</span></td>
+                            <td>5 Jan 2025</td>
+                            <td>1 minggu lalu</td>
+                            <td>$19.99</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view" title="Lihat Detail">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </button>
+                                    <button class="action-btn edit" title="Edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                    </button>
+                                    <button class="action-btn activate" title="Aktifkan">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"></polyline></svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn">Previous</button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">...</button>
+                <button class="pagination-btn">10</button>
+                <button class="pagination-btn">Next</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Add User Modal -->
+<div id="addUserModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Tambah Pengguna Baru</h2>
+            <button class="modal-close">&times;</button>
+        </div>
+        <form class="user-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Nama Depan</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nama Belakang</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="userType">Tipe Pengguna</label>
+                    <select id="userType" name="userType" required>
+                        <option value="regular">Regular</option>
+                        <option value="premium">Premium</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status" required>
+                        <option value="active">Aktif</option>
+                        <option value="inactive">Tidak Aktif</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn-cancel">Batal</button>
+                <button type="submit" class="btn-submit">Tambah Pengguna</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/admin-user-management.js"></script>
+</body>
+</html>

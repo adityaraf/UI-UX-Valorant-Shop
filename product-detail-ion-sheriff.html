@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ion Sheriff - ValoSkins</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">ValoSkins</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link active">Shop</a></li>
+                <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> &gt; 
+        <a href="catalog.html">Shop</a> &gt; 
+        <a href="#">Sheriff</a> &gt; 
+        <span>Ion Sheriff</span>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="images/skin6.jpg" alt="Ion Sheriff" id="main-product-image">
+            </div>
+            <div class="thumbnail-images">
+                <img src="images/skin6.jpg" alt="Ion Sheriff View 1" class="thumbnail" onclick="changeImage('images/skin6.jpg')">
+
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="product-tag">Fan Favorite</div>
+            <h1>Ion Sheriff</h1>
+            <div class="product-meta">
+                <p class="product-category">Category: <span>Sheriff</span></p>
+                <p class="product-id">SKU: <span>VALO-ION-SHE-001</span></p>
+            </div>
+            <div class="product-price">
+                <span class="current-price">$19.99</span>
+                <span class="original-price">$24.99</span>
+                <span class="discount">20% OFF</span>
+            </div>
+            <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(135 reviews)</span>
+            </div>
+            <div class="product-description">
+                <p>The Ion Sheriff is a sleek, futuristic skin from the popular Ion collection. This premium skin features a clean, sci-fi design with energy accents and precision engineering. The Ion Sheriff includes:</p>
+                <ul>
+                    <li>Custom model with a futuristic design</li>
+                    <li>Clean white and blue color scheme</li>
+                    <li>Unique firing sound with energy discharge effects</li>
+                    <li>Special reload animation</li>
+                    <li>Custom finisher effect</li>
+                </ul>
+            </div>
+            <div class="product-variants">
+                <h3>Variant:</h3>
+                <div class="variant-options">
+                    <button class="variant-btn active">Default</button>
+                </div>
+            </div>
+            <div class="product-purchase">
+                <div class="quantity-selector">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" max="10" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            <div class="product-guarantee">
+                <div class="guarantee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="guarantee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Fast Delivery</span>
+                </div>
+                <div class="guarantee-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <span>100% Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+        <div class="tabs-header">
+            <button class="tab-btn active" data-tab="description">Description</button>
+            <button class="tab-btn" data-tab="specifications">Specifications</button>
+            <button class="tab-btn" data-tab="reviews">Reviews (135)</button>
+            <button class="tab-btn" data-tab="faq">FAQ</button>
+        </div>
+        <div class="tabs-content">
+            <div class="tab-panel active" id="description">
+                <h3>Ion Sheriff</h3>
+                <p>The Ion Sheriff is a sleek, minimalist skin that combines futuristic design with clean aesthetics. Part of the popular Ion collection, this skin transforms the Sheriff into a precision-engineered weapon with energy-based technology.</p>
+                <p>The Ion collection is known for its clean white and blue color scheme, subtle energy effects, and satisfying sound design that makes these weapons feel powerful yet precise.</p>
+                <h4>Features:</h4>
+                <ul>
+                    <li>Custom model with a sleek, futuristic design</li>
+                    <li>Clean white and blue color scheme with energy accents</li>
+                    <li>Unique firing sound with a crisp, energy discharge effect</li>
+                    <li>Special reload animation featuring energy core technology</li>
+                    <li>Custom finisher effect that disintegrates enemies</li>
+                    <li>Available in multiple color variants to match your style</li>
+                </ul>
+            </div>
+            <div class="tab-panel" id="specifications">
+                <h3>Specifications</h3>
+                <table class="specs-table">
+                    <tr>
+                        <td>Skin Name</td>
+                        <td>Ion Sheriff</td>
+                    </tr>
+                    <tr>
+                        <td>Weapon Type</td>
+                        <td>Sheriff (Pistol)</td>
+                    </tr>
+                    <tr>
+                        <td>Collection</td>
+                        <td>Ion Collection</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date</td>
+                        <td>November 11, 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Rarity</td>
+                        <td>Premium Edition (PE)</td>
+                    </tr>
+                    <tr>
+                        <td>Price (Original)</td>
+                        <td>$24.99</td>
+                    </tr>
+                    <tr>
+                        <td>Variants</td>
+                        <td>4 (Default, Green, Yellow, Red)</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Features</td>
+                        <td>Model, VFX, Animation, Finisher, Sound</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-panel" id="reviews">
+                <h3>Customer Reviews</h3>
+                <div class="review-summary">
+                    <div class="review-average">
+                        <span class="average-rating">4.9</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="total-reviews">Based on 135 reviews</span>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-bar">
+                            <span class="rating-label">5 Stars</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                            <span class="rating-count">122</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">4 Stars</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 8%;"></div>
+                            </div>
+                            <span class="rating-count">11</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">3 Stars</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 1%;"></div>
+                            </div>
+                            <span class="rating-count">2</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">2 Stars</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%;"></div>
+                            </div>
+                            <span class="rating-count">0</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="rating-label">1 Star</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%;"></div>
+                            </div>
+                            <span class="rating-count">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="reviewer-info">
+                            <img src="/placeholder.svg?height=50&width=50" alt="User" class="reviewer-avatar">
+                            <div class="reviewer-details">
+                                <h4>Maya L.</h4>
+                                <div class="review-rating">★★★★★</div>
+                                <span class="review-date">October 5, 2023</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>The Ion Sheriff is simply the best Sheriff skin in the game. The sound is so crisp and satisfying, and the green variant looks amazing. It genuinely makes me hit more headshots (or at least it feels that way)!</p>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="reviewer-info">
+                            <img src="/placeholder.svg?height=50&width=50" alt="User" class="reviewer-avatar">
+                            <div class="reviewer-details">
+                                <h4>Jackson T.</h4>
+                                <div class="review-rating">★★★★★</div>
+                                <span class="review-date">September 22, 2023</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>This skin is clean, minimal, and has the most satisfying sound in the game. The yellow variant is my personal favorite. Fast delivery from ValoSkins and great customer service!</p>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="reviewer-info">
+                            <img src="/placeholder.svg?height=50&width=50" alt="User" class="reviewer-avatar">
+                            <div class="reviewer-details">
+                                <h4>Sophia C.</h4>
+                                <div class="review-rating">★★★★★</div>
+                                <span class="review-date">September 10, 2023</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>The Ion Sheriff is worth every penny. The red variant is absolutely stunning, and the sound makes those one-taps feel so much more satisfying. Highly recommend for any Sheriff user!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="load-more-btn">Load More Reviews</button>
+            </div>
+            <div class="tab-panel" id="faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">How long does delivery take?</div>
+                        <div class="faq-answer">
+                            <p>Most skin deliveries are completed within 10-15 minutes after purchase. In rare cases, it may take up to 1 hour.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Is this the same as buying from the in-game store?</div>
+                        <div class="faq-answer">
+                            <p>We offer skins that may not be currently available in your in-game store rotation. Our prices may differ from the official store.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I upgrade the skin after purchase?</div>
+                        <div class="faq-answer">
+                            <p>Yes, once the skin is in your account, you can upgrade it using Radianite Points just like any other skin.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do I need to provide my Valorant account details?</div>
+                        <div class="faq-answer">
+                            <p>Yes, we will need your Riot account login details to deliver the skin. All information is handled securely and deleted after delivery.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I get a refund if I change my mind?</div>
+                        <div class="faq-answer">
+                            <p>We offer refunds within 24 hours of purchase if the skin has not been delivered yet. Once delivered, we cannot offer refunds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <h2>You May Also Like</h2>
+        <div class="product-slider">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin3.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Oni Phantom</h3>
+                    <p class="product-price">$27.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-oni-phantom.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin4.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Elderflame Operator</h3>
+                    <p class="product-price">$28.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-Elderflame-operator.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin2.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Reaver Phantom</h3>
+                    <p class="product-price">$17.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-reaver-Phantom.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin7.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Sovereign Ghost</h3>
+                    <p class="product-price">$17.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-sovereign-ghost.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ValoSkins</h2>
+                <p>Your trusted source for Valorant skins</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="catalog.html">All Skins</a></li>
+                        <li><a href="#">Vandal Skins</a></li>
+                        <li><a href="#">Phantom Skins</a></li>
+                        <li><a href="#">Knife Skins</a></li>
+                        <li><a href="#">Bundles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="orders.html">Order History</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ValoSkins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-product-image').src = src;
+        }
+        
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and panels
+                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding panel
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // FAQ functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isOpen = answer.classList.contains('active');
+                    
+                    // Close all answers
+                    document.querySelectorAll('.faq-answer').forEach(a => {
+                        a.classList.remove('active');
+                    });
+                    
+                    document.querySelectorAll('.faq-question').forEach(q => {
+                        q.classList.remove('active');
+                    });
+                    
+                    // If the clicked question wasn't open, open it
+                    if (!isOpen) {
+                        answer.classList.add('active');
+                        this.classList.add('active');
+                    }
+                });
+            });
+            
+            // Quantity selector
+            const minusBtn = document.querySelector('.minus');
+            const plusBtn = document.querySelector('.plus');
+            const quantityInput = document.querySelector('.quantity-input');
+            
+            minusBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                value = value > 1 ? value - 1 : 1;
+                quantityInput.value = value;
+            });
+            
+            plusBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                value = value < 10 ? value + 1 : 10;
+                quantityInput.value = value;
+            });
+            
+            // Variant selection
+            const variantBtns = document.querySelectorAll('.variant-btn');
+            
+            variantBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.variant-btn').forEach(b => {
+                        b.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

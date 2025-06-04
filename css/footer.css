@@ -1,0 +1,153 @@
+/* Footer Styles */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+}
+
+.footer-logo h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo p {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-column h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-column h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-social h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-icon {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-logo {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-logo h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-social {
+        text-align: center;
+    }
+    
+    .footer-social h3:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}

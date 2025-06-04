@@ -1,0 +1,246 @@
+/* Transaction Management Specific Styles */
+.management-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-bar svg {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  min-width: 150px;
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background: #059669;
+}
+
+.table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.transaction-id {
+  display: flex;
+  flex-direction: column;
+}
+
+.id-text {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.customer-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.customer-email {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.product-count {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.product-names {
+  font-size: 0.75rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+}
+
+.method-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.method-badge.qris {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.method-badge.gopay {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.method-badge.credit-card {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.amount {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.date {
+  font-weight: 500;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.time {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.pagination-btn.active {
+  background: #ff4655;
+  color: white;
+  border-color: #ff4655;
+}
+
+@media (max-width: 1024px) {
+  .management-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .admin-table {
+    min-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .customer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .product-list,
+  .date-info {
+    gap: 0.125rem;
+  }
+}

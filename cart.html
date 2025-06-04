@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ValoSkins</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">ValoSkins</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link active">Cart</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Header -->
+    <section class="cart-header">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your items and proceed to checkout</p>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-content">
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="images/skin1.jpg" alt="Prime Vandal">
+                    </div>
+                    <div class="item-details">
+                        <h3>Prime Vandal</h3>
+                        <p class="item-category">Vandal</p>
+                        <p class="item-variant">Variant: Default</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <div class="item-price">$25.99</div>
+                    <div class="item-actions">
+                        <button class="remove-item">Remove</button>
+                        <button class="save-for-later">Save for Later</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="images/skin5.jpg" alt="Glitchpop Dagger">
+                    </div>
+                    <div class="item-details">
+                        <h3>Glitchpop Vandal</h3>
+                        <p class="item-category">Knife</p>
+                        <p class="item-variant">Variant: Blue</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <div class="item-price">$39.99</div>
+                    <div class="item-actions">
+                        <button class="remove-item">Remove</button>
+                        <button class="save-for-later">Save for Later</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal (2 items)</span>
+                    <span>$65.98</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span>$5.28</span>
+                </div>
+                <div class="coupon-code">
+                    <input type="text" placeholder="Enter coupon code">
+                    <button>Apply</button>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$71.26</span>
+                </div>
+                <button class="checkout-btn" id="proceedToCheckout">Proceed to Checkout</button>
+                <div class="payment-methods">
+                    <p>We accept:</p>
+                    <div class="payment-icons">
+                        <span class="payment-icon">Gopay</span>
+                        <span class="payment-icon">Qris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saved for Later -->
+    <section class="saved-for-later">
+        <h2>Saved for Later</h2>
+        <div class="saved-items">
+            <div class="saved-item">
+                <div class="item-image">
+                    <img src="images/skin3.jpg" alt="Oni Phantom">
+                </div>
+                <div class="item-details">
+                    <h3>Oni Phantom</h3>
+                    <p class="item-category">Shorty</p>
+                    <p class="item-price">$15.99</p>
+                </div>
+                <div class="item-actions">
+                    <button class="move-to-cart">Move to Cart</button>
+                    <button class="remove-saved">Remove</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section class="recommended-products">
+        <h2>You Might Also Like</h2>
+        <div class="product-slider">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin2.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Reaver Phantom</h3>
+                    <p class="product-price">$29.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin4.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Elderflame Operator</h3>
+                    <p class="product-price">$34.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin6.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Ion Sheriff</h3>
+                    <p class="product-price">$19.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin8.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Singularity Spectre</h3>
+                    <p class="product-price">$22.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ValoSkins</h2>
+                <p>Your trusted source for Valorant skins</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="catalog.html">All Skins</a></li>
+                        <li><a href="#">Vandal Skins</a></li>
+                        <li><a href="#">Phantom Skins</a></li>
+                        <li><a href="#">Knife Skins</a></li>
+                        <li><a href="#">Bundles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="transaction-history.html">Order History</a></li>
+                        <li><a href="admin-dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ValoSkins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Payment Popup Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-modal-overlay"></div>
+        <div class="payment-modal-content">
+            <div class="payment-modal-header">
+                <h2>Choose Payment Method</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            
+            <div class="payment-modal-body">
+                <div class="order-summary-popup">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (2 items)</span>
+                        <span>$65.98</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>$5.28</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span>$71.26</span>
+                    </div>
+                </div>
+
+                <div class="payment-methods-popup">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-options-popup">
+                        <div class="payment-option-popup" data-method="qris">
+                            <div class="payment-icon-popup">
+                                <img src="images/Qris.png" alt="QRIS">
+                            </div>
+                            <div class="payment-info">
+                                <h4>QRIS</h4>
+                                <p>Scan QR code to pay</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment-method" id="qris" value="qris">
+                            </div>
+                        </div>
+                        
+                        <div class="payment-option-popup" data-method="gopay">
+                            <div class="payment-icon-popup">
+                                <img src="images/gopay.png" alt="GoPay">
+                            </div>
+                            <div class="payment-info">
+                                <h4>GoPay</h4>
+                                <p>Pay with GoPay wallet</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment-method" id="gopay" value="gopay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QRIS Payment Section -->
+                <div class="qris-payment" id="qrisPayment" style="display: none;">
+                    <div class="qr-code-container">
+                        <img src="images/Qriscode.png" alt="QR Code" class="qr-code">
+                        <p>Scan this QR code with your banking app</p>
+                        <div class="payment-timer">
+                            <span>Payment expires in: </span>
+                            <span class="timer" id="paymentTimer">14:59</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GoPay Payment Section -->
+                <div class="gopay-payment" id="gopayPayment" style="display: none;">
+                    <div class="gopay-form">
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" placeholder="+62 812-3456-7890" required>
+                        </div>
+                        <button class="gopay-pay-btn">Pay with GoPay</button>
+                        <p class="gopay-info">You will receive a push notification to complete the payment</p>
+                    </div>
+                </div>
+
+                <div class="payment-actions">
+                    <button class="cancel-payment-btn" id="cancelPayment">Cancel</button>
+                    <button class="confirm-payment-btn" id="confirmPayment" disabled>Confirm Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

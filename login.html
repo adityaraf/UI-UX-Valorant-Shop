@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ValoSkins</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">ValoSkins</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn active">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-image">
+                <img src="images/login-image.jpg" alt="Valorant Login">
+            </div>
+            <div class="login-form-container">
+                <h2>Login to Your Account</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ValoSkins</h2>
+                <p>Your trusted source for Valorant skins</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="catalog.html">All Skins</a></li>
+                        <li><a href="#">Vandal Skins</a></li>
+                        <li><a href="#">Phantom Skins</a></li>
+                        <li><a href="#">Knife Skins</a></li>
+                        <li><a href="#">Bundles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="orders.html">Order History</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ValoSkins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

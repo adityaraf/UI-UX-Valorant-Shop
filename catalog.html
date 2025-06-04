@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - ValoSkins</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">ValoSkins</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link active">Shop</a></li>
+                <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Catalog Header -->
+    <section class="catalog-header">
+        <h1>Valorant Skin Catalog</h1>
+        <p>Browse our collection of premium Valorant weapon skins</p>
+    </section>
+
+    <!-- Filter and Sort Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="weapon-type">Weapon Type:</label>
+                <select id="weapon-type" name="weapon-type">
+                    <option value="all">All Weapons</option>
+                    <option value="vandal">Vandal</option>
+                    <option value="phantom">Phantom</option>
+                    <option value="operator">Operator</option>
+                    <option value="sheriff">Sheriff</option>
+                    <option value="knife">Knife</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-range">Price Range:</label>
+                <select id="price-range" name="price-range">
+                    <option value="all">All Prices</option>
+                    <option value="under-10">Under $10</option>
+                    <option value="10-20">$10 - $20</option>
+                    <option value="20-30">$20 - $30</option>
+                    <option value="over-30">Over $30</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by" name="sort-by">
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+            <button class="filter-button">Apply Filters</button>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-catalog">
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin1.jpg" alt="Valorant Skin">
+                    <div class="product-tag">Popular</div>
+                </div>
+                <div class="product-info">
+                    <h3>Prime Vandal</h3>
+                    <p class="product-category">Vandal</p>
+                    <p class="product-price">$25.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-prime-vandal.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin2.jpg" alt="Valorant Skin">
+                    <div class="product-tag">New</div>
+                </div>
+                <div class="product-info">
+                    <h3>Reaver Phantom</h3>
+                    <p class="product-category">Phantom</p>
+                    <p class="product-price">$29.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-reaver-phantom.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin3.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Oni phantom</h3>
+                    <p class="product-category">phantom</p>
+                    <p class="product-price">$15.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-oni-phantom.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin4.jpg" alt="Valorant Skin">
+                    <div class="product-tag">Sale</div>
+                </div>
+                <div class="product-info">
+                    <h3>Elderflame Operator</h3>
+                    <p class="product-category">Operator</p>
+                    <p class="product-price">$34.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-elderflame-operator.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin5.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Glitchpop Vandal</h3>
+                    <p class="product-category">Vandal</p>
+                    <p class="product-price">$39.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-glitchpop-vandal.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin6.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Ion Sheriff</h3>
+                    <p class="product-category">Sheriff</p>
+                    <p class="product-price">$19.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-ion-sheriff.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin7.jpg" alt="Valorant Skin">
+                </div>
+                <div class="product-info">
+                    <h3>Sovereign Ghost</h3>
+                    <p class="product-category">Ghost</p>
+                    <p class="product-price">$17.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-sovereign-ghost.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/skin8.jpg" alt="Valorant Skin">
+                    <div class="product-tag">Limited</div>
+                </div>
+                <div class="product-info">
+                    <h3>Singularity Spectre</h3>
+                    <p class="product-category">Spectre</p>
+                    <p class="product-price">$22.99</p>
+                    <div class="product-actions">
+                        <a href="product-detail-singularity-spectre.html" class="view-button">View Details</a>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">Next</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ValoSkins</h2>
+                <p>Your trusted source for Valorant skins</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="catalog.html">All Skins</a></li>
+                        <li><a href="#">Vandal Skins</a></li>
+                        <li><a href="#">Phantom Skins</a></li>
+                        <li><a href="#">Knife Skins</a></li>
+                        <li><a href="#">Bundles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="transaction-history.html">Order History</a></li>
+                        <li><a href="admin-dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ValoSkins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

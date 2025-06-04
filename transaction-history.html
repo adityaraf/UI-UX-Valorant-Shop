@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction History | Valorant Skin Marketplace</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/transaction-history.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">ValoSkins</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="articles.html" class="nav-link ">Articles</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+<!-- Transaction History Content -->
+<div class="transaction-container">
+    <div class="transaction-header">
+        <h1>Transaction History</h1>
+        <p>View all your past purchases and transaction details</p>
+    </div>
+
+    <div class="transaction-filters">
+        <div class="filter-group">
+            <label for="date-range">Date Range:</label>
+            <select id="date-range">
+                <option value="all">All Time</option>
+                <option value="last-month">Last Month</option>
+                <option value="last-3-months">Last 3 Months</option>
+                <option value="last-year">Last Year</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="status-filter">Status:</label>
+            <select id="status-filter">
+                <option value="all">All Status</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+                <option value="cancelled">Cancelled</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="amount-filter">Amount:</label>
+            <select id="amount-filter">
+                <option value="all">All Amounts</option>
+                <option value="0-25">$0 - $25</option>
+                <option value="25-50">$25 - $50</option>
+                <option value="50-100">$50 - $100</option>
+                <option value="100+">$100+</option>
+            </select>
+        </div>
+        <button class="filter-btn">Apply Filters</button>
+    </div>
+
+    <div class="transaction-summary">
+        <div class="summary-card">
+            <h3>Total Spent</h3>
+            <p class="summary-amount">$1,247.89</p>
+            <span class="summary-period">All Time</span>
+        </div>
+        <div class="summary-card">
+            <h3>Total Transactions</h3>
+            <p class="summary-amount">23</p>
+            <span class="summary-period">Completed</span>
+        </div>
+        <div class="summary-card">
+            <h3>This Month</h3>
+            <p class="summary-amount">$89.97</p>
+            <span class="summary-period">3 Transactions</span>
+        </div>
+        <div class="summary-card">
+            <h3>Average Order</h3>
+            <p class="summary-amount">$54.26</p>
+            <span class="summary-period">Per Transaction</span>
+        </div>
+    </div>
+
+    <div class="transaction-list">
+        <div class="transaction-item">
+            <div class="transaction-info">
+                <div class="transaction-id">#TXN-2025-001</div>
+                <div class="transaction-date">May 15, 2025 - 2:30 PM</div>
+            </div>
+            <div class="transaction-items">
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/skin1.jpg" alt="Prime Vandal">
+                        <span>Prime Vandal</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/skin2.jpg" alt="Reaver Phantom">
+                        <span>Reaver Phantom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-amount">$49.98</div>
+            <div class="transaction-status completed">Completed</div>
+            <div class="transaction-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="download-receipt-btn">Receipt</button>
+            </div>
+        </div>
+
+        <div class="transaction-item">
+            <div class="transaction-info">
+                <div class="transaction-id">#TXN-2025-002</div>
+                <div class="transaction-date">May 12, 2025 - 4:15 PM</div>
+            </div>
+            <div class="transaction-items">
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/skin6.jpg" alt="Ion Sheriff">
+                        <span>Ion Sheriff</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-amount">$19.99</div>
+            <div class="transaction-status completed">Completed</div>
+            <div class="transaction-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="download-receipt-btn">Receipt</button>
+            </div>
+        </div>
+
+        <div class="transaction-item">
+            <div class="transaction-info">
+                <div class="transaction-id">#TXN-2025-003</div>
+                <div class="transaction-date">May 10, 2025 - 1:45 PM</div>
+            </div>
+            <div class="transaction-items">
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/skin4.jpg" alt="Elderflame Operator">
+                        <span>Elderflame Operator</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/skin5.jpg" alt="Glitchpop Vandal">
+                        <span>Glitchpop Vandal</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/skin3.jpg" alt="Oni Phantom">
+                        <span>Oni Phantom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-amount">$74.97</div>
+            <div class="transaction-status completed">Completed</div>
+            <div class="transaction-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="download-receipt-btn">Receipt</button>
+            </div>
+        </div>
+
+        <div class="transaction-item">
+            <div class="transaction-info">
+                <div class="transaction-id">#TXN-2025-004</div>
+                <div class="transaction-date">May 8, 2025 - 6:20 PM</div>
+            </div>
+            <div class="transaction-items">
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/skin8.jpg" alt="Singularity Spectre">
+                        <span>Singularity Spectre</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-amount">$19.99</div>
+            <div class="transaction-status pending">Pending</div>
+            <div class="transaction-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+
+        <div class="transaction-item">
+            <div class="transaction-info">
+                <div class="transaction-id">#TXN-2025-005</div>
+                <div class="transaction-date">May 5, 2025 - 3:10 PM</div>
+            </div>
+            <div class="transaction-items">
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/skin7.jpg" alt="Sovereign Ghost">
+                        <span>Sovereign Ghost</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/skin1.jpg" alt="Prime Vandal">
+                        <span>Prime Vandal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transaction-amount">$44.98</div>
+            <div class="transaction-status cancelled">Cancelled</div>
+            <div class="transaction-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="reorder-btn">Reorder</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <button class="pagination-btn">Previous</button>
+        <button class="pagination-btn active">1</button>
+        <button class="pagination-btn">2</button>
+        <button class="pagination-btn">3</button>
+        <button class="pagination-btn">Next</button>
+    </div>
+</div>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ValoSkins</h2>
+                <p>Your trusted source for Valorant skins</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="catalog.html">All Skins</a></li>
+                        <li><a href="#">Vandal Skins</a></li>
+                        <li><a href="#">Phantom Skins</a></li>
+                        <li><a href="#">Knife Skins</a></li>
+                        <li><a href="#">Bundles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="transaction-history.html">Order History</a></li>
+                        <li><a href="admin-dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ValoSkins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
